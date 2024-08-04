@@ -132,7 +132,7 @@ function searchNotes() {
                 <div v-if="!notes.length">No notes have been created yet. Hit the <b>New</b> button to create one.</div>
                 <Card class="bg-red-500" v-for="(note, index) in currentNotes" :key="index">
                     <template #title>
-                        <span style="color: #cdbdff;">{{ note.title }}</span>
+                        {{ note.title }}
                     </template>
                     <template #subtitle>
                         <Tag class="mr-2" :value="tag" v-for="tag in note.tags"></Tag>
@@ -180,11 +180,6 @@ function searchNotes() {
 
 <style scoped>
 .p-button {
-    padding: 0.24rem 0.4rem;
+   /*  padding: 0.24rem 0.4rem; */
 }
-
-.p-card {
-    background-color: rgba(40, 35, 44, 0.816);
-}
-
 </style>
