@@ -65,7 +65,7 @@ app.use(PrimeVue, {
         ripple: true,
         options: {
             prefix: 'p',
-            darkModeSelector: '.p-dark',
+            darkModeSelector: '.p-light',
             cssLayer: false
         }
     }
