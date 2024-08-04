@@ -179,6 +179,6 @@ function searchNotes() {
 
 <style scoped>
     .p-button {
-        font-size: 0.96rem;
+        font-size: 0.9rem;
     }
 </style>
