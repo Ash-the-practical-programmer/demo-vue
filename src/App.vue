@@ -129,7 +129,7 @@ function searchNotes() {
             </Toolbar>
             <div class="flex flex-wrap justify-content-around gap-3">
                 <div v-if="!notes.length">No notes have been created yet. Hit the <b>New</b> button to create one.</div>
-                <Card class="bg-red-500" v-for="(note, index) in currentNotes" :key="index">
+                <Card class="bg-red-500 shadow-md" v-for="(note, index) in currentNotes" :key="index">
                     <template #title>
                         {{ note.title }}
                     </template>
