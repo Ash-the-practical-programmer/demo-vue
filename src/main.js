@@ -1,4 +1,3 @@
-
 import { createApp } from "vue"
 import PrimeVue from "primevue/config"
 import Aura from '@primevue/themes/aura'
@@ -9,7 +8,6 @@ import 'primeicons/primeicons.css'
 import Tooltip from 'primevue/tooltip'
 
 const app = createApp(App)
-
 
 const Noir = definePreset(Aura, {
     semantic: {
@@ -65,10 +63,11 @@ app.use(PrimeVue, {
         ripple: true,
         options: {
             prefix: 'p',
-            darkModeSelector: 'dark',
+            darkModeSelector: 'system',
             cssLayer: false
         }
     }
 })
+
 app.directive('tooltip', Tooltip)
 app.mount('#app')
