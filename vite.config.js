@@ -12,5 +12,6 @@ export default defineConfig({
       resolvers: [
         PrimeVueResolver()
       ]
-    })]
+    })],
+    base: "/demo-vue/"
 })
