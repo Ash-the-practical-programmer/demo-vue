@@ -1,5 +1,4 @@
 <script setup>
-import AutoComplete from 'primevue/autocomplete';
 import { ref, reactive, computed, onMounted, watchEffect } from 'vue'
 
 const STORAGE_KEY = 'notes'
@@ -177,9 +176,3 @@ function searchNotes() {
 </Dialog>
     </div>
 </template>
-
-<style scoped>
-.p-button {
-   /*  padding: 0.24rem 0.4rem; */
-}
-</style>
